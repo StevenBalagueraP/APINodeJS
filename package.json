@@ -2,9 +2,9 @@
   "name": "apinodejs",
   "version": "1.0.0",
   "description": "Simple API built with nodejs",
-  "main": "server.js",
+  "main": "node_modules/.bin/nodemon --exec babel-node src/server.js",
   "scripts": {
-    "start": "node_modules/.bin/nodemon --exec babel-node server.js",
+    "start": "node_modules/.bin/nodemon --exec babel-node src/server.js",
     "test": "ava"
   },
   "repository": {
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/StevenBalagueraP/APINodeJS#readme",
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "http-status-codes": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
